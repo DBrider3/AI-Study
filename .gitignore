@@ -1,0 +1,7 @@
+# 환경 변수 파일
+.env
+
+# Mac OS 파일
+.DS_Store
+
+
