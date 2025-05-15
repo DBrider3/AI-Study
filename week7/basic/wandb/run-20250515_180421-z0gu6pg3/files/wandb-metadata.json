@@ -1,0 +1,60 @@
+{
+  "os": "Linux-6.8.0-1024-aws-x86_64-with-glibc2.39",
+  "python": "CPython 3.12.3",
+  "startedAt": "2025-05-15T18:04:21.803703Z",
+  "args": [
+    "--model_name_or_path",
+    "openai-community/openai-gpt",
+    "--per_device_train_batch_size",
+    "8",
+    "--dataset_name",
+    "wikitext",
+    "--dataset_config_name",
+    "wikitext-2-raw-v1",
+    "--do_train",
+    "--output_dir",
+    "/tmp/test-clm",
+    "--save_total_limit",
+    "1",
+    "--logging_steps",
+    "100",
+    "--fp16"
+  ],
+  "program": "/home/ubuntu/AI-Study/week7/basic/train.py",
+  "codePath": "week7/basic/train.py",
+  "git": {
+    "remote": "git@github.com:DBrider3/AI-Study.git",
+    "commit": "5ea9c9fe6f291f75a28fe3685a7e8f8b81c98df5"
+  },
+  "email": "chodavid0109@gmail.com",
+  "root": "/home/ubuntu/AI-Study/week7/basic",
+  "host": "ip-172-31-29-235",
+  "executable": "/home/ubuntu/AI-Study/week7/basic/.venv/bin/python",
+  "codePathLocal": "train.py",
+  "cpu_count": 2,
+  "cpu_count_logical": 4,
+  "gpu": "Tesla T4",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "102888095744",
+      "used": "11092430848"
+    }
+  },
+  "memory": {
+    "total": "16555139072"
+  },
+  "cpu": {
+    "count": 2,
+    "countLogical": 4
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Tesla T4",
+      "memoryTotal": "16106127360",
+      "cudaCores": 2560,
+      "architecture": "Turing"
+    }
+  ],
+  "cudaVersion": "12.2"
+}
