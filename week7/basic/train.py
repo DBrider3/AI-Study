@@ -53,6 +53,14 @@ class Arguments:
 parser = HfArgumentParser((Arguments, TrainingArguments))
 args, training_args = parser.parse_args_into_dataclasses()
 
+# 필요한 추가 설정들 직접 지정
+training_args.evaluation_strategy = "steps"
+training_args.eval_steps = 500
+training_args.logging_dir = "./logs"
+training_args.logging_strategy = "steps"
+training_args.logging_steps = 100
+training_args.report_to = ["wandb"]
+
 logger = logging.getLogger()
 
 logging.basicConfig(
